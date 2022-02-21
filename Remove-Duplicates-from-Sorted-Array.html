@@ -23,6 +23,9 @@
    */
 
   var removeDuplicates = function (nums) {
+    if (!Array.isArray(nums)) {
+      return "Enter a Proper Value";
+    }
     for (let i = 0; i < nums.length; ) {
       if (nums[i] === nums[i + 1]) {
         nums.splice(i, 1);
